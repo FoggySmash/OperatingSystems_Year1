@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# This is NOT the original script
+# This is a copy of the script pasted here to be have easy access to.
+# The real script is located in the bin folder in the home directory
+# Enter cd ~/bin to access the actual script
+# Typing in "assignment.sh" into the terminal will run the script from any directory.
+
 # For backing up a specified folder selected by the user
 case5(){
     # Asks user for a folder to back up
@@ -48,12 +54,12 @@ while true; do
     # Uses option to fulfil request
     case $MenuOption in
 
-    1) ls -l ;;         # List files
-    2) df -h ;;         # Show free disk space
-    3) echo $PATH ;;    # Show system path
-    4) history ;;       # Show history
-    5) case5 ;;         # Backup files
-    6) case6 ;;         # exit
-    *) echo "invalid request" ;;    # Invalid request
+        1) ls -l ;;         # List files
+        2) df -h ;;         # Show free disk space
+        3) pwd ;;    # Show system path
+        4) history ;;       # Show history
+        5) case5 ;;         # Backup files
+        6) case6 ;;         # exit
+        *) echo "invalid request" ;;    # Invalid request
     esac
 done
